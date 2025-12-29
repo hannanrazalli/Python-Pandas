@@ -1,11 +1,6 @@
-#First step: Install pandas library - pip install pandas
-
 import pandas as pd
 
-#df = pd.read_csv('xxx.csv') # Load data from a CSV file into a DataFrame
+a = pd.Series([2,3,4,5], index=['a','b','c','d'])
+print(a['c'])
 
-#print(pd.__version__) # Print the version of pandas library
-
-a = [1, 7, 2]
-myvar = pd.Series(a) # Create a pandas Series from a list
-print(myvar) # Print the Series
+#df = pd.Series([0.25,0.5,0.75,1.0], index=['a','b','c','d'])
