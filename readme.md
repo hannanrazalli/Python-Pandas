@@ -29,7 +29,7 @@ staff = {
 df = pd.DataFrame(staff)
 print(df)
 
-
+--PRINT pd.Series
 grade_data = {
     "A":4,
     "B":3.5,
@@ -38,3 +38,14 @@ grade_data = {
 }
 grade = pd.Series(grade_data)
 print(grade)
+
+
+--PRINT VALUE ONLY:
+    marks_dict = {
+    "A":85,
+    "B":75,
+    "C":65,
+    "D":55
+}
+marks = pd.Series(marks_dict)
+print(marks.values)
