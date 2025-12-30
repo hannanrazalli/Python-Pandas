@@ -86,3 +86,7 @@ df = pd.DataFrame({
     'Grade': grade})
 print(df)
 print(df.T) -- TRANSPOSE
+
+print(df.iloc[0:2]) -- IMPLICIT(FOR NUMBERS)
+print(df.loc['A':'C']) - EXPLICIT(FOR LETTERS)
+
