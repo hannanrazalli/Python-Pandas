@@ -83,7 +83,7 @@ marks = pd.Series(marks_dict)
 
 df = pd.DataFrame({
     'Marks': marks,
-    'Grade': grade})
+    'Grade': grade}) -- Same as making new dict
 print(df)
 print(df.T) -- TRANSPOSE
 
