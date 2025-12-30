@@ -61,3 +61,27 @@ marks = pd.Series(marks_dict)
 print(marks['A':'C']) -- EXPLICIT INDEX
 print(marks[0:2]) -- IMPLICIT INDEX
 
+--COMBINE 2 SERIES TO BECOME 1 DATAFRAME
+import pandas as pd
+
+grade_data = {
+    "A":4.0,
+    "B":3.5,
+    "C":3.0,
+    "D":2.5
+}
+
+marks_dict = {
+    "A":85,
+    "B":75,
+    "C":65,
+    "D":55
+}
+
+grade = pd.Series(grade_data)
+marks = pd.Series(marks_dict)
+
+df = pd.DataFrame({
+    'Marks': marks,
+    'Grade': grade})
+print(df)
