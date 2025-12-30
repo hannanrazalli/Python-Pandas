@@ -28,3 +28,13 @@ staff = {
 
 df = pd.DataFrame(staff)
 print(df)
+
+
+grade_data = {
+    "A":4,
+    "B":3.5,
+    "C":3,
+    "D":2.5
+}
+grade = pd.Series(grade_data)
+print(grade)
