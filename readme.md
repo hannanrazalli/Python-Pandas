@@ -90,3 +90,4 @@ print(df.T) -- TRANSPOSE
 print(df.iloc[0:2]) -- IMPLICIT(FOR NUMBERS)
 print(df.loc['A':'C']) - EXPLICIT(FOR LETTERS)
 
+print(df.to_numpy()) -- values change to to_numpy()
