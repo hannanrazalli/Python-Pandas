@@ -49,3 +49,15 @@ print(grade)
 }
 marks = pd.Series(marks_dict)
 print(marks.values)
+
+
+marks_dict = {
+    "A":85,
+    "B":75,
+    "C":65,
+    "D":55
+}
+marks = pd.Series(marks_dict)
+print(marks['A':'C']) -- EXPLICIT INDEX
+print(marks[0:2]) -- IMPLICIT INDEX
+
