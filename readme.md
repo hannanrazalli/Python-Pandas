@@ -85,3 +85,4 @@ df = pd.DataFrame({
     'Marks': marks,
     'Grade': grade})
 print(df)
+print(df.T) -- TRANSPOSE
