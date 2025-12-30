@@ -1,17 +1,25 @@
 import pandas as pd
 
-a = pd.Series([2,3,4,5], index=['a','b','c','d'])
-print(type(a.values))
-print(type(a))
-print(a.index)
-print(a['a'])
-print(a['a':'c'])
-
-staff = {
-    "nama"  : ["Ali","Abu","Ahmad"],
-    "umur"  : ["25","26","27"],
-    "kerja" : ["analyst","data","engineer"]
+grade_data = {
+    "A":4.0,
+    "B":3.5,
+    "C":3.0,
+    "D":2.5
 }
 
-df = pd.DataFrame(staff)
+marks_dict = {
+    "A":85,
+    "B":75,
+    "C":65,
+    "D":55
+}
+
+grade = pd.Series(grade_data)
+marks = pd.Series(marks_dict)
+
+df = pd.DataFrame({
+    'Marks': marks,
+    'Grade': grade})
+
+df['% Marks'] = ((df['Marks']/90)*100).round(1)
 print(df)
