@@ -107,4 +107,5 @@ a = pd.DataFrame([
     ])
 
 
-print(a.fillna(0))
+print(a.fillna(0)) - Fill all NaN records with 0
+print(a.dropna) -- Drop all NaN records
