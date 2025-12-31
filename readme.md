@@ -97,3 +97,5 @@ df['% Marks'] = ((df['Marks']/90)*100).round(1)
 print(df)
 
 del df['% Marks']
+
+a = df[df['Marks'] > 70]
