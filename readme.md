@@ -109,3 +109,8 @@ a = pd.DataFrame([
 
 print(a.fillna(0)) - Fill all NaN records with 0
 print(a.dropna) -- Drop all NaN records
+
+
+-- Create custom index with value of a,b,c
+A = pd.Series(['a','b','c'], index = [1,3,5])
+print(A)
