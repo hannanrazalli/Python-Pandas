@@ -18,8 +18,10 @@ grade = pd.Series(grade_data)
 marks = pd.Series(marks_dict)
 
 df = pd.DataFrame({
-    'Marks': marks,
-    'Grade': grade})
+    'Grade' : grade_data,
+    'Marks' : marks_dict
+})
 
-df['% Marks'] = ((df['Marks']/90)*100).round(1)
+df['ScaledMarks'] = (df['Marks']/90*100).round(1)
+
 print(df)
