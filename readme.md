@@ -112,5 +112,6 @@ print(a.dropna) -- Drop all NaN records
 
 
 -- Create custom index with value of a,b,c
-A = pd.Series(['a','b','c'], index = [1,3,5])
-print(A)
+a = pd.Series(['a','b','c'], index = [1,3,5])
+print(a)
+
